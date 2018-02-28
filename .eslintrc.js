@@ -19,7 +19,8 @@ module.exports = {
   'rules': {
     // allow paren-less arrow functions
     'arrow-parens': 0,
-	'no-tabs': 0,
+    'no-tabs': 0,
+    'space-before-function-paren': 0,
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
