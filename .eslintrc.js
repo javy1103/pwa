@@ -20,7 +20,13 @@ module.exports = {
     // allow paren-less arrow functions
     'arrow-parens': 0,
     'no-tabs': 0,
+    'no-return-assign': 0,
     'space-before-function-paren': 0,
+    'one-var': 0,
+    'no-unused-vars': 0,
+    'no-unreachable': 0,
+    'no-self-compare': 0,
+    'no-unused-expressions': 0,
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development

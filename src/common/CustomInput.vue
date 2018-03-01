@@ -1,7 +1,7 @@
 <template lang="html">
   <div :class="['form-group label-floating', { 'is-empty': val.length == 0 }, { 'is-focused': isFocused }]">
     <label class="control-label">{{ label }}</label>
-    <input @focus="toggleFocus" @focusout="toggleFocus" class="form-control" v-model="val">
+    <input ref="el" @focus="toggleFocus" @focusout="toggleFocus" class="form-control" v-model="val">
     <span class="material-input"></span>
   </div>
 </template>
@@ -22,6 +22,9 @@ export default {
     value: {
       required: true,
       default: ''
+    },
+    type: {
+      default: 'text'
     }
   },
 
@@ -41,9 +44,10 @@ export default {
     toggleFocus() {
       this.isFocused = !this.isFocused
     }
+  },
+
+  mounted() {
+    this.$refs.el.type = this.type
   }
 }
 </script>
-
-<style lang="scss">
-</style>

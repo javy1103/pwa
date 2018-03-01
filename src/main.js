@@ -3,6 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Datepicker from '@/common/Datepicker.vue'
+import CustomSelect from '@/common/CustomSelect.vue'
+import Tabs from '@/common/Tabs.vue'
+import '@/assets/js/fontawesome-all'
+
+Vue.component('datepicker', Datepicker)
+Vue.component('customSelect', CustomSelect)
+Vue.component('tabs', Tabs)
 
 Vue.config.productionTip = false
 
